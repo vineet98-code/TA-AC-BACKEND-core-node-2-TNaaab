@@ -1,13 +1,11 @@
 var path = require('path');
 
-var relativepath = './form.html';
+var relativepath = './server.js';
 
-var absolutePath = __dirname;
 
-// console.log(\_\_dirname);
-// console.log(\_\_filename);
+console.log(__dirname, __filename);
 
-var formPath = path.join(__dirname,  'index.js');
+var formPath = path.join(__dirname,  'server.js');
 
 
 console.log(formPath, relativepath);
