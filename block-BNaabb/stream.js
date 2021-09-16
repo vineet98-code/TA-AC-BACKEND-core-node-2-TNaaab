@@ -11,7 +11,8 @@ function handleRequest(res,req){
      });
 
      req.on('end', () => {
-         console.log(store);
+         res.write(store);
+         res.end();
      })
 
     
